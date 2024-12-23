@@ -29,13 +29,13 @@ body {
     box-sizing: border-box;
     padding: 1em 2em 1em 2em;
 }
-#home ul {
+ul {
     padding-left: inherit;
 }
 nav ul li {
     list-style-type: none;
 }
-ul {
+.page-content ul {
     padding-left: 20px;
 }
 
