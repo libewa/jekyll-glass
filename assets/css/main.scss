@@ -29,11 +29,14 @@ body {
     box-sizing: border-box;
     padding: 1em 2em 1em 2em;
 }
-ul {
+#home ul {
     padding-left: inherit;
 }
 nav ul li {
     list-style-type: none;
+}
+ul {
+    padding-left: 20px;
 }
 
 h1 {
@@ -43,6 +46,10 @@ h1 {
 h1 a {
     color: inherit;
     text-decoration: none;
+}
+
+code {
+    font-family: $code-font-family, monospace;
 }
 
 .glass {
@@ -100,6 +107,9 @@ body {
             "sidebar"
             "content";
         grid-template-columns: 1fr;
+    }
+    #social-link {
+        display: none;
     }
 }
 
