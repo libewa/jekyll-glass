@@ -1,5 +1,7 @@
 <ul class="static-links">
-    {%- include static-links.html -%}
+    {%- for entry in site.static_links -%}
+        {%- include static-item.html item = entry -%}
+    {%- endfor -%}
 </ul>
 <ul class="social-links">
     {%- for entry in site.social_links -%}
