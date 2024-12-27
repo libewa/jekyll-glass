@@ -64,6 +64,8 @@ The following configuration options are available:
 - `url`, the hostname of the site, and protocol, if not `https://`
 - `social_links`, a mapping of social media links (i.e. external URLs, including the `https://`), with the same format as [Minima] 3, although no icons are generated, so I recommend setting the `title` property.
 - `static_links`, a mapping of (local) static links, with the same format as `social_links`.
+- `show_excerpts`, a boolean to show excerpts on the post list. Defaults to `false`.
+- `show_page_titles`, a boolean to show titles on pages. Defaults to `true`. The title of `/index` is only shown in the browser title bar.
 - `tag_page_dir`, the directory where tag pages are generated.
 
 ## A note on GitHub Pages
