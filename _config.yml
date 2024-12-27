@@ -16,7 +16,10 @@ social_links:
 static_links:
   - { title: "Home", url: "/index" }
   - { title: "Contact", url: "/contact" }
+  - { title: "Posts", url: "/posts" }
   - { title: "Feed", url: "/feed.xml" }
+
+show_excerpts: true
 
 # Build settings
 plugins:
