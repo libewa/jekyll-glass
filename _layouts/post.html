@@ -1,4 +1,7 @@
 ---
 layout: base
 ---
+{% if site.show_page_titles != false %}
+<h1>{{ page.title }}</h1>
+{% endif %}
 {{ content }}
