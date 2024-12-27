@@ -7,14 +7,14 @@
 
 body {
     font-family: $base-font-family;
-    color: $light-color;
+    color: $foreground-color;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
-    background-color: $dark-color;
+    background-color: $background-color;
 }
 
 a {
@@ -22,6 +22,10 @@ a {
 }
 
 a:visited {
+    color: $link-color;
+}
+
+.post-list a:visited, #page-content a:visited {
     color: $link-color-visited;
 }
 
@@ -45,18 +49,6 @@ h1 {
 
 .post-list-heading {
     font-size: 26px;
-}
-
-h1 a {
-    color: $light-color;
-    text-decoration: none;
-}
-h1 a:visited {
-    color: $light-color;
-}
-
-.static-links a:visited {
-    color: $link-color;
 }
 
 code {

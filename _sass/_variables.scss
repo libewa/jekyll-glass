@@ -16,6 +16,9 @@ $light-color: #fff !default; // Light color used e.g. for foreground text
 $link-color: #bbb !default;
 $link-color-visited: #888 !default;
 
+$foreground-color: $light-color !default;
+$background-color: $dark-color !default;
+
 $spacing-unit: 30px !default;
 
 $table-text-align: left !default;
