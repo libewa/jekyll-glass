@@ -68,6 +68,15 @@ The following configuration options are available:
 - `show_page_titles`, a boolean to show titles on pages. Defaults to `true`. The title of `/index` is only shown in the browser title bar.
 - `tag_page_dir`, the directory where tag pages are generated.
 
+### Custom Sass
+If you want to modify the theme's CSS, you can override the theme's styles by creating a file in your Jekyll site's `_sass` directory. The file must be named `_custom.scss` (or `_custom.sass`, if you like suffering from indentation-based syntax), and it will be automatically included in the theme. Of course, you can import more partials there.
+
+Import the theme's variables by adding the following line to your `_custom.scss`:
+
+```scss
+@import "variables";
+```
+
 ## A note on GitHub Pages
 The default "Publish from Branch" option on GitHub Pages does not support custom Gems. While you can use this theme using `jekyll-remote-theme`, this will break tags. Use a GitHub Actions workflow to build the site instead. The Jekyll team have written a simple [guide](https://jekyllrb.com/docs/continuous-integration/github-actions/) for this.
 

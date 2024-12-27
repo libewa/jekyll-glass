@@ -1,0 +1,21 @@
+// Define defaults for each variable.
+
+$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+"Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica,
+Arial, sans-serif !default;
+$code-font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono",
+"Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+
+// https://coolors.co/1b2f33-28502e-47682c-8c7051-ef3054
+$dark-color: #1b2f33ff !default; // Dark color used e.g. for the background
+$color-2: #28502eff !default;
+$color-3: #47682cff !default;
+$color-4: #8c7051ff !default;
+$color-5: #ef3054ff !default;
+$light-color: #fff !default; // Light color used e.g. for foreground text
+$link-color: #bbb !default;
+$link-color-visited: #888 !default;
+
+$spacing-unit: 30px !default;
+
+$table-text-align: left !default;
