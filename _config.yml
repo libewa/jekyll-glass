@@ -1,0 +1,20 @@
+title: jekyll-glass
+author:
+  name: Linus Warnatz
+  email: linus@libewa.xyz
+description: >- # this means to ignore newlines until "baseurl:"
+  A simple Jekyll theme for blogging, using glass blocks as a design element.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "libewa.xyz" # the base hostname & protocol for your site, e.g. http://example.com
+
+tag_page_layout: tag
+tag_page_dir: tag
+
+social_links:
+  - { platform: github,  user_url: "https://github.com/libewa/jekyll-glass" }
+
+# Build settings
+plugins:
+- jekyll-feed
+- jekyll/tagging
+- jekyll-sitemap
