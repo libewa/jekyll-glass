@@ -1,0 +1,164 @@
+---
+---
+
+@charset "utf-8";
+@import "custom";
+
+// Define defaults for each variable.
+
+$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica,
+    Arial, sans-serif !default;
+$code-font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono",
+    "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+
+// https://coolors.co/1b2f33-28502e-47682c-8c7051-ef3054
+$dark-color: #1b2f33ff !default; // Dark color used e.g. for the background
+$color-2: #28502eff !default;
+$color-3: #47682cff !default;
+$color-4: #8c7051ff !default;
+$color-5: #ef3054ff !default;
+$light-color: #fff !default; // Light color used e.g. for foreground text
+$link-color: #bbb !default;
+$link-color-visited: #888 !default;
+
+$spacing-unit: 30px !default;
+
+$table-text-align: left !default;
+
+body {
+    font-family: $base-font-family;
+    color: $light-color;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    background-color: $dark-color;
+}
+
+a {
+    color: $link-color;
+}
+
+a:visited {
+    color: $link-color-visited;
+}
+
+.container {
+    box-sizing: border-box;
+    padding: 1em 2em 1em 2em;
+}
+ul {
+    padding-left: inherit;
+}
+nav ul li {
+    list-style-type: none;
+}
+#page-content ul {
+    padding-left: 20px;
+}
+
+h1 {
+    font-family: $code-font-family, monospace;
+}
+
+.post-list-heading {
+    font-size: 26px;
+}
+
+h1 a {
+    color: $light-color;
+    text-decoration: none;
+}
+h1 a:visited {
+    color: $light-color;
+}
+
+.static-links a:visited {
+    color: $link-color;
+}
+
+code {
+    font-family: $code-font-family, monospace;
+    padding: 1px 3px 1px 3px;
+    @extend .glass;
+}
+
+.glass {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Grid layout */
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+}
+
+#page-header {
+    grid-area: header;
+    width: 100%;
+}
+
+#below-header {
+    display: grid;
+    grid-template-areas: "sidebar content";
+    grid-template-columns: 250px 1fr;
+    gap: 10px;
+}
+
+#sidebar-left {
+    grid-area: sidebar;
+}
+
+#page-content {
+    grid-area: content;
+}
+
+#page-footer {
+    grid-area: footer;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    #below-header {
+        grid-template-areas:
+            "sidebar"
+            "content";
+        grid-template-columns: 1fr;
+    }
+    .social-link {
+        display: none;
+    }
+}
+
+#topnav {
+    display: none; /* Hide by default */
+}
+#topnav ul {
+    display: flex;
+    gap: 1rem; /* Optional: Adjust the gap between links */
+}
+
+@media (max-width: 600px) {
+    #sidenav {
+        display: none;
+    }
+    #topnav {
+        display: block;
+    }
+}
