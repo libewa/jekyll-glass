@@ -1,3 +1,9 @@
+---
+layout: page
+permalink: /index
+title: README
+---
+
 # jekyll-glass
 
 `jekyll-glass` is a Jekyll theme using glassmorphism design and clear block separation, created for my own blog. The theme's layout was loosely inspired by the page layout of [xkcd](https://xkcd.com/).
@@ -69,6 +75,5 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/libewa
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-For commit history before 
 
 [Minima]: https://github.com/jekyll/minima
