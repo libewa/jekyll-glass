@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["linus@libewa.xyz"]
 
   spec.summary       = "A Jekyll theme using glass blocks."
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/libewa/jekyll-glass"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
