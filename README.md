@@ -62,7 +62,8 @@ The following configuration options are available:
 - `author`, the author of the site. This expects a mapping of `name` and `email`.
 - `baseurl`, the subpath of the site, if it is not hosted at the root of the domain
 - `url`, the hostname of the site, and protocol, if not `https://`
-- `social`, a mapping of social media links, with the same format as [Minima] 3, although no icons are generated, so I recommend setting the `title` property.
+- `social_links`, a mapping of social media links (i.e. external URLs, including the `https://`), with the same format as [Minima] 3, although no icons are generated, so I recommend setting the `title` property.
+- `static_links`, a mapping of (local) static links, with the same format as `social_links`.
 - `tag_page_dir`, the directory where tag pages are generated.
 
 ## A note on GitHub Pages
