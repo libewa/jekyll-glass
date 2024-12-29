@@ -1,0 +1,121 @@
+---
+̀---
+
+:root {
+    --base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif;
+    --code-font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+    --base-font-size: 16px;
+    --base-font-weight: 400;
+    --small-font-size: var(--base-font-size);
+    --base-line-height: 1.5;
+
+    --spacing-unit: 30px;
+
+    --table-text-align: left;
+}
+html {
+    font-size: var(--base-font-size);
+}
+
+body {
+    font: var(--base-font-weight) var(--base-font-size) / var(--base-line-height) var(--base-font-family);
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    background-color: rebeccapurple;
+}
+
+.container {
+    box-sizing: border-box;
+    padding: 1em 2em 1em 2em;
+}
+ul {
+    padding-left: inherit;
+}
+nav ul li {
+    list-style-type: none;
+}
+
+h1 a {
+    font-family: var(--code-font-family), monospace;
+    color: inherit;
+    text-decoration: none;
+}
+
+.glass {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.34);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Grid layout */
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+}
+
+#page-header {
+    grid-area: header;
+    width: 100%;
+}
+
+#below-header {
+    display: grid;
+    grid-template-areas:
+        "sidebar content";
+    grid-template-columns: 250px 1fr;
+    gap: 1rem;
+}
+
+#sidebar-left {
+    grid-area: sidebar;
+}
+
+#page-content {
+    grid-area: content;
+}
+
+#page-footer {
+    grid-area: footer;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    #below-header {
+        grid-template-areas:
+            "sidebar"
+            "content";
+        grid-template-columns: 1fr;
+    }
+}
+
+#topnav {
+    display: none; /* Hide by default */
+}
+#topnav ul {
+    display: flex;
+    gap: 1rem; /* Optional: Adjust the gap between links */
+}
+
+@media (max-width: 600px) {
+    #sidenav {
+        display: none;
+    }
+    #topnav {
+        display: block;
+    }
+}

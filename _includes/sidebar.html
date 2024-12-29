@@ -1,0 +1,22 @@
+<div id="sidebar-left" class="sidebar glass container" >
+    <nav id="sidenav">
+        <ul id="sidenav-permalinks">
+            <li><a href="/index">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        <h3>Recent Posts</h3>
+        <ul id="sidebar-post-list">
+            {% for post in site.posts limit:5 %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+    <nav id="topnav">
+        <ul id="topnav-permalinks">
+            <li><a href="/index">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+</div>
