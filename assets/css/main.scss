@@ -5,6 +5,9 @@
 @import "custom";
 @import "variables";
 
+$fa-font-path: "../fonts/font-awesome";
+@import 'font-awesome';
+
 body {
     font-family: $base-font-family;
     color: $foreground-color;
@@ -58,6 +61,10 @@ h1 {
 
 .post-list-heading {
     font-size: 26px;
+}
+
+.social-icon {
+    text-decoration: none;
 }
 
 code {

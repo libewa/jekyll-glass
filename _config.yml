@@ -11,7 +11,7 @@ tag_page_layout: tag
 tag_page_dir: tag
 
 social_links:
-  - { platform: github,  user_url: "https://github.com/libewa/jekyll-glass" }
+  - { title: "GitHub", user_url: "https://github.com/libewa/jekyll-glass" }
 
 static_links:
   - { title: "Home", url: "/index" }
@@ -26,3 +26,7 @@ plugins:
 - jekyll-feed
 - jekyll/tagging
 - jekyll-sitemap
+- jekyll-font-awesome-sass
+
+font-awesome:
+  assets: true

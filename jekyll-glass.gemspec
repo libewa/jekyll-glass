@@ -16,6 +16,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-tagging", "~> 1.1.0"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.17.0"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4.0"
+  spec.add_runtime_dependency "jekyll-font-awesome-sass"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "kramdown-parser-gfm"
