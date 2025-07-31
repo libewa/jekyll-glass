@@ -47,6 +47,15 @@ h1 {
     font-family: $code-font-family, monospace;
 }
 
+#site-title {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin-block: 0.67em;
+  font-family: $code-font-family, monospace;
+}
+
+
 .post-list-heading {
     font-size: 26px;
 }
@@ -133,3 +142,5 @@ body {
         display: block;
     }
 }
+
+@import "custom";
